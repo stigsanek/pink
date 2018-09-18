@@ -1,0 +1,38 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 4 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stigsanek/pink.git"
+  },
+  "author": "stigsanek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stigsanek/pink/issues"
+  },
+  "homepage": "https://github.com/stigsanek/pink#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}
