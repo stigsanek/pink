@@ -1,0 +1,9 @@
+.button {
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  font-family: $f-bold;
+  @include font(21px, 21px);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 30px;
+}

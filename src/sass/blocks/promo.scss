@@ -1,0 +1,117 @@
+.promo {
+  @include wrapper;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo__header {
+  color: rgb(255, 255, 255);
+  @include reset;
+  font-family: $f-light;
+  font-weight: 100;
+  text-align: center;
+}
+
+.promo__list-link {
+  @include reset;
+  list-style: none;
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.promo__item-link a {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-color: #ffffff;
+}
+
+.promo__list-link span {
+  @include vh;
+}
+
+@media (min-width: 660px) {
+  .promo__wrapper {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .promo__text {
+    font-family: $f-light;
+    @include font(18px, 24px);
+    @include reset;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+  }
+}
+
+@media (min-width: 660px) {
+  .promo {
+    padding: 210px 20px 110px 20px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-size: 700px auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  .promo__header {
+    @include font(50px, 57px);
+    margin-bottom: 55px;
+  }
+
+  .promo__button {
+    margin-bottom: 65px;
+  }
+
+  .promo__list-link {
+    margin-bottom: 55px;
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .promo {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .promo {
+    padding: 225px 20px 125px 20px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-size: 1050px auto;
+    background-repeat: no-repeat;
+    background-position: 17px bottom;
+  }
+
+  .promo__header {
+    @include font(50px, 57px);
+    margin-bottom: 55px;
+  }
+
+  .promo__button {
+    margin-bottom: 65px;
+  }
+
+  .promo__list-link {
+    margin-bottom: 55px;
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .promo {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
+  }
+}

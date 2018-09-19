@@ -1,0 +1,28 @@
+@mixin vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin wrapper {
+  min-width: 280px;
+  max-width: 940px;
+  margin: 0 auto;
+}

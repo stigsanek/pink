@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink: Главная</title>
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body>
   <!--Разметка шапки-->
-  <header class="page-header">
+  <header class="page-header page-header__body">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <img class="page-header__image" src="#" alt="Логотип Pink">
+        <img class="page-header__image" src="img/logo-pink-white-desktop.svg" alt="Логотип Pink">
       </a>
       <nav class="site-menu">
+       <button class="site-menu__toggle" type="button"><span>Открыть меню</span></button>
         <ul class="site-menu__list">
           <li class="site-menu__item"><a>Главная</a></li>
           <li class="site-menu__item"><a href="photo.html">Фотографии</a></li>
@@ -28,18 +30,21 @@
 
   <!--Разметка основного содержимого-->
   <main class="page-main">
-    <h1 class="page-main__header">Pink: Главная страница</h1>
-    <div class="page-main__wrapper">
+    <div class="page-main__cover">
       <section class="promo">
-        <h2 class="promo__header">Взгляните на жизнь иначе!</h2>
-        <button class="button" type="button">Скачать приложение</button>
-        <ul class="promo__list-link">
-          <li class="promo__item-link"><a href="#"><span>Загрузить приложение для Apple</span></a></li>
-          <li class="promo__item-link"><a href="#"><span>Загрузить приложение для Android</span></a></li>
-          <li class="promo__item-link"><a href="#"><span>Загрузить приложение для Windows</span></a></li>
-        </ul>
-        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="promo__wrapper">
+          <h1 class="promo__header">Взгляните на жизнь иначе!</h1>
+          <button class="button promo__button" type="button">Скачать приложение</button>
+          <ul class="promo__list-link">
+            <li class="promo__item-link"><a href="#"><span>Загрузить приложение для Apple</span></a></li>
+            <li class="promo__item-link"><a href="#"><span>Загрузить приложение для Android</span></a></li>
+            <li class="promo__item-link"><a href="#"><span>Загрузить приложение для Windows</span></a></li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
+    </div>
+    <div class="page-main__wrapper">
       <section class="features">
         <h2 class="features__header">Преимущества</h2>
         <p class="features__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
@@ -66,7 +71,7 @@
       <section class="reviews">
         <h2 class="reviews__header">Отзывы</h2>
         <article class="reviews__item">
-          <h3 class="reviews__item-header"></h3>
+          <h3 class="reviews__item-header">Отзыв</h3>
           <blockquote class="reviews_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
           <div class="reviews__author">
             <span class="reviews__author-name">Николай Петров</span>
@@ -76,7 +81,7 @@
       </section>
       <section class="price">
         <h2 class="price__header">Стоимость</h2>
-        <table class="price__table">
+        <!--<table class="price__table">
           <tr>
             <th></th>
             <th><span>База</span></th>
@@ -101,7 +106,7 @@
             <td><span>Не включен в стоимость</span></td>
             <td><span>Включен в стоимость</span></td>
           </tr>
-        </table>
+        </table>-->
       </section>
       <section class="contacts">
         <h2 class="contacts__header">Контакты</h2>

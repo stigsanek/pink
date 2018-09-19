@@ -1,0 +1,36 @@
+.page-main__cover {
+  margin-top: -110px;
+  background-size: cover;
+  background-position: center;
+  background-color: #263341;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 660px) {
+  .page-main__cover {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .page-main__cover {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .page-main__cover {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .page-main__cover {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-size: cover;
+    }
+  }
+}

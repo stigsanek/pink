@@ -1,0 +1,5 @@
+body {
+  color: $text-color;
+  font-family: $f-light;
+  @include font(18px, 30px);
+}

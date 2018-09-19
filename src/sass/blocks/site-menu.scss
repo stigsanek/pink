@@ -1,0 +1,38 @@
+.site-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include reset;
+  list-style: none;
+  justify-content: space-between;
+  width: 625px;
+}
+
+.site-menu__toggle {
+  display: none;
+  width: 50px;
+  height: 26px;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}
+
+.site-menu__toggle span {
+  @include vh;
+}
+
+.site-menu__item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+  .site-menu__toggle {
+    display: block;
+  }
+
+  .site-menu__list {
+    display: none;
+  }
+}
