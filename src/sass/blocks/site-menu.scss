@@ -7,27 +7,27 @@
   width: 625px;
 }
 
-.site-menu__toggle {
-  display: none;
-  width: 50px;
-  height: 26px;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-size: cover;
-  background-color: transparent;
-  border: none;
-}
-
-.site-menu__toggle span {
-  @include vh;
-}
-
 .site-menu__item a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   line-height: 18px;
 }
 
-@media (min-width: 320px) and (max-width: 950px) {
+.site-menu__toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+
+  & span {
+    @include vh;
+  }
+
+  & .site-menu__ico {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $desktop) {
   .site-menu__toggle {
     display: block;
   }

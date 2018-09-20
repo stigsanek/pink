@@ -2,8 +2,28 @@
   border: 3px solid #ffffff;
   background-color: transparent;
   font-family: $f-bold;
-  @include font(21px, 21px);
   color: rgb(255, 255, 255);
   padding: 15px;
   border-radius: 30px;
+}
+
+@media (min-width: $mobile) {
+  .button {
+    @include font(18px, 18px);
+    width: 280px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .button {
+    @include font(18px, 18px);
+    width: 300px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .button {
+    @include font(21px, 21px);
+  }
 }
