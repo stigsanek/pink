@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgb(29, 38, 49);
+  background-color: rgb(40, 54, 69);
   width: 100%;
   position: relative;
 }
@@ -11,6 +11,10 @@
 @media (min-width: $mobile) {
   .page-main__cover {
     background-image: url(../img/bg-back-mobile@1x.jpg);
+  }
+
+  .page-main__cover--site-menu {
+    transform: translateY(305px);
   }
 
   @media (min-resolution: 144dpi),
@@ -24,6 +28,10 @@
 @media (min-width: $tablet) {
   .page-main__cover {
     background-image: url(../img/bg-back-tablet@1x.jpg);
+  }
+
+  .page-main__cover--site-menu {
+    transform: translateY(250px);
   }
 
   @media (min-resolution: 144dpi),

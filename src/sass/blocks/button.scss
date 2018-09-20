@@ -5,6 +5,17 @@
   color: rgb(255, 255, 255);
   padding: 15px;
   border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: rgb(210, 40, 86);
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 @media (min-width: $mobile) {
@@ -20,7 +31,6 @@
     width: 300px;
   }
 }
-
 
 @media (min-width: $desktop) {
   .button {

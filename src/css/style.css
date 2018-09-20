@@ -342,17 +342,26 @@ body {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
-  padding: 35px 20px 40px 20px; }
+  -webkit-box-align: stretch;
+          align-items: stretch; }
 
 .page-header__logo {
-  display: block;
-  margin-top: -8px; }
+  display: block; }
   .page-header__logo svg {
     fill: #ffffff; }
+  .page-header__logo:hover svg,
+  .page-header__logo:focus svg {
+    fill: #d22856; }
+  .page-header__logo:active svg {
+    fill: #ffffff;
+    opacity: 0.3; }
 
 @media (min-width: 320px) {
+  .page-header {
+    padding: 12px 0 18px 0; }
+  .page-header__site-menu {
+    position: absolute;
+    top: 70px; }
   .page-header__ico-mobile {
     display: block; }
   .page-header__ico-tablet {
@@ -361,6 +370,12 @@ body {
     display: none; } }
 
 @media (min-width: 660px) {
+  .page-header {
+    padding: 27px 0 44px 0; }
+  .page-header__site-menu {
+    top: 110px; }
+  .page-header__toggle {
+    align-self: flex-end; }
   .page-header__ico-mobile {
     display: none; }
   .page-header__ico-tablet {
@@ -369,6 +384,10 @@ body {
     display: none; } }
 
 @media (min-width: 950px) {
+  .page-header {
+    padding: 30px 0 40px 0; }
+  .page-header__site-menu {
+    position: static; }
   .page-header__ico-mobile {
     display: none; }
   .page-header__ico-tablet {
@@ -376,27 +395,11 @@ body {
   .page-header__ico-desktop {
     display: block; } }
 
-.site-menu__list {
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  width: 625px; }
-
-.site-menu__item a {
-  color: white;
-  text-decoration: none;
-  line-height: 18px; }
-
-.site-menu__toggle {
+.page-header__toggle {
   display: none;
   background-color: transparent;
   border: none; }
-  .site-menu__toggle span {
+  .page-header__toggle span {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -408,14 +411,88 @@ body {
             clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden; }
-  .site-menu__toggle .site-menu__ico {
+  .page-header__toggle svg {
     fill: #ffffff; }
+  .page-header__toggle:hover svg,
+  .page-header__toggle:focus svg {
+    fill: #d22856; }
+  .page-header__toggle:active svg {
+    fill: rgba(210, 40, 86, 0.3); }
+  .page-header__toggle .page-header__ico-closed {
+    display: none; }
+  .page-header__toggle .page-header__toggle--open {
+    display: block; }
+  .page-header__toggle .page-header__toggle--closed {
+    display: none; }
 
 @media (min-width: 320px) and (max-width: 950px) {
-  .site-menu__toggle {
+  .page-header--background {
+    background-color: #283645; }
+  .page-header__logo {
+    padding-left: 20px; }
+  .page-header__toggle {
+    display: block;
+    padding-right: 20px;
+    margin-top: 7px; } }
+
+.site-menu__list {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  width: 625px;
+  padding-top: 10px; }
+
+.site-menu__item a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  line-height: 18px;
+  padding: 5px 0; }
+  .site-menu__item a:hover, .site-menu__item a:focus {
+    color: #d22856; }
+  .site-menu__item a:active {
+    color: rgba(255, 255, 255, 0.3); }
+
+.site-menu__active {
+  border-bottom: 2px solid #ffffff; }
+
+@media (min-width: 320px) and (max-width: 950px) {
+  .site-menu {
+    display: none;
+    width: 100%; }
+  .site-menu--open {
     display: block; }
   .site-menu__list {
-    display: none; } }
+    padding: 0;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: #283645; }
+  .site-menu__item {
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #000000; }
+    .site-menu__item:first-of-type {
+      border-top: 1px solid #000000; }
+    .site-menu__item a {
+      text-align: center;
+      font-size: 18px;
+      line-height: 32px;
+      font-family: "Open Sans Bold", "Arial", sans-serif;
+      text-transform: uppercase; }
+      .site-menu__item a:active {
+        color: rgba(210, 40, 86, 0.3); }
+  .site-menu__active {
+    border-bottom: none; } }
 
 .promo {
   min-width: 280px;
@@ -569,20 +646,23 @@ body {
   .promo__button {
     margin-bottom: 66px; }
   .promo__list-link {
-    margin-bottom: 50px; } }
+    margin-bottom: 45px; } }
 
 .page-main__cover {
   margin-top: -110px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #1d2631;
+  background-color: #283645;
   width: 100%;
   position: relative; }
 
 @media (min-width: 320px) {
   .page-main__cover {
-    background-image: url(../img/bg-back-mobile@1x.jpg); } }
+    background-image: url(../img/bg-back-mobile@1x.jpg); }
+  .page-main__cover--site-menu {
+    -webkit-transform: translateY(305px);
+            transform: translateY(305px); } }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
   .page-main__cover {
@@ -590,7 +670,10 @@ body {
 
 @media (min-width: 660px) {
   .page-main__cover {
-    background-image: url(../img/bg-back-tablet@1x.jpg); } }
+    background-image: url(../img/bg-back-tablet@1x.jpg); }
+  .page-main__cover--site-menu {
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px); } }
 
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .page-main__cover {
@@ -611,6 +694,12 @@ body {
   color: white;
   padding: 15px;
   border-radius: 30px; }
+  .button:hover, .button:focus {
+    background-color: #ffffff;
+    color: #d22856; }
+  .button:active {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 0.3); }
 
 @media (min-width: 320px) {
   .button {
