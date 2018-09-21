@@ -655,6 +655,14 @@ body {
   background-size: cover;
   background-position: center; }
 
+.page-main__wrapper {
+  min-width: 280px;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg); }
+
 @media (min-width: 320px) {
   .page-main--shift {
     -webkit-transform: translateY(305px);
@@ -715,3 +723,77 @@ body {
   .button {
     font-size: 21px;
     line-height: 21px; } }
+
+.features {
+  padding: 65px 0 55px 0;
+  background-image: -webkit-linear-gradient(94deg, white 0%, white 425px, #f2f2f2 425px, #f2f2f2 100%);
+  background-image: linear-gradient(-4deg, white 0%, white 425px, #f2f2f2 425px, #f2f2f2 100%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.features__header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.features__promo {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  line-height: 57px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  max-width: 735px;
+  margin: 0 auto; }
+  .features__promo:last-of-type {
+    margin-bottom: 60px; }
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+
+.features__item {
+  width: 300px;
+  text-align: center;
+  padding-top: 60px; }
+
+.features__item--time {
+  width: 100%;
+  text-align: left;
+  padding-top: 95px;
+  margin-top: 65px; }
+  .features__item--time .features__item-text {
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 30px; }
+
+.features__item-header {
+  display: block;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px; }
+
+.features__item-text {
+  margin: 0;
+  padding: 0;
+  width: 290px;
+  margin: 0 auto; }
+
+.features__item-link {
+  color: #d22856; }

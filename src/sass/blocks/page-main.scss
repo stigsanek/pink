@@ -8,6 +8,12 @@
   background-position: center;
 }
 
+.page-main__wrapper {
+  @include wrapper;
+  padding: 0 20px;
+  transform: rotate(-180deg);
+}
+
 @media (min-width: $mobile) {
   .page-main--shift {
     transform: translateY(305px);
