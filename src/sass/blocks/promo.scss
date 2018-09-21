@@ -53,10 +53,10 @@
 
 @media (min-width: $mobile) {
   .promo {
-    padding-top: 460px;
+    padding-top: 480px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-size: 258px auto;
-    background-position: center bottom;
+    background-position: center 195px;
   }
 
   @media (min-resolution: 144dpi),
@@ -72,7 +72,6 @@
     box-sizing: border-box;
     padding: 30px 20px 30px 20px;
     background-color: rgb(29, 38, 49);
-    position: absolute;
     align-items: center;
   }
 
@@ -96,7 +95,7 @@
 
 @media (min-width: $tablet) {
   .promo {
-    padding: 210px 20px 110px 20px;
+    padding: 235px 20px 110px 20px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: 700px auto;
     background-position: right -20px bottom 0;
@@ -114,7 +113,6 @@
     width: 300px;
     padding: 0;
     background-color: transparent;
-    position: static;
     box-sizing: none;
   }
 
@@ -141,7 +139,7 @@
 
 @media (min-width: $desktop) {
   .promo {
-    padding: 225px 20px 120px 20px;
+    padding: 250px 20px 120px 20px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px auto;
     background-position: 35px bottom;

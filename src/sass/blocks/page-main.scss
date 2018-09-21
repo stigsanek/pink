@@ -1,20 +1,20 @@
 .page-main__cover {
-  margin-top: -110px;
-  background-size: cover;
-  background-position: center;
+  margin-top: -135px;
   background-repeat: no-repeat;
   background-color: rgb(40, 54, 69);
   width: 100%;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: $mobile) {
-  .page-main__cover {
-    background-image: url(../img/bg-back-mobile@1x.jpg);
+  .page-main--shift {
+    transform: translateY(305px);
   }
 
-  .page-main__cover--site-menu {
-    transform: translateY(305px);
+  .page-main__cover {
+    background-image: url(../img/bg-back-mobile@1x.jpg);
   }
 
   @media (min-resolution: 144dpi),
@@ -26,12 +26,12 @@
 }
 
 @media (min-width: $tablet) {
-  .page-main__cover {
-    background-image: url(../img/bg-back-tablet@1x.jpg);
+  .page-main--shift {
+    transform: translateY(250px);
   }
 
-  .page-main__cover--site-menu {
-    transform: translateY(250px);
+  .page-main__cover {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
   }
 
   @media (min-resolution: 144dpi),

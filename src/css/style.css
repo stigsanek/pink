@@ -561,10 +561,10 @@ body {
 
 @media (min-width: 320px) {
   .promo {
-    padding-top: 460px;
+    padding-top: 480px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-size: 258px auto;
-    background-position: center bottom; } }
+    background-position: center 195px; } }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
   .promo {
@@ -577,7 +577,6 @@ body {
     box-sizing: border-box;
     padding: 30px 20px 30px 20px;
     background-color: #1d2631;
-    position: absolute;
     -webkit-box-align: center;
             align-items: center; }
   .promo__header {
@@ -593,7 +592,7 @@ body {
 
 @media (min-width: 660px) {
   .promo {
-    padding: 210px 20px 110px 20px;
+    padding: 235px 20px 110px 20px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: 700px auto;
     background-position: right -20px bottom 0; } }
@@ -608,7 +607,6 @@ body {
     width: 300px;
     padding: 0;
     background-color: transparent;
-    position: static;
     box-sizing: none; }
   .promo__header {
     width: 220px;
@@ -627,7 +625,7 @@ body {
 
 @media (min-width: 950px) {
   .promo {
-    padding: 225px 20px 120px 20px;
+    padding: 250px 20px 120px 20px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px auto;
     background-position: 35px bottom; } }
@@ -649,31 +647,31 @@ body {
     margin-bottom: 45px; } }
 
 .page-main__cover {
-  margin-top: -110px;
-  background-size: cover;
-  background-position: center;
+  margin-top: -135px;
   background-repeat: no-repeat;
   background-color: #283645;
   width: 100%;
-  position: relative; }
+  position: relative;
+  background-size: cover;
+  background-position: center; }
 
 @media (min-width: 320px) {
-  .page-main__cover {
-    background-image: url(../img/bg-back-mobile@1x.jpg); }
-  .page-main__cover--site-menu {
+  .page-main--shift {
     -webkit-transform: translateY(305px);
-            transform: translateY(305px); } }
+            transform: translateY(305px); }
+  .page-main__cover {
+    background-image: url(../img/bg-back-mobile@1x.jpg); } }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
   .page-main__cover {
     background-image: url(../img/bg-back-mobile@2x.jpg); } }
 
 @media (min-width: 660px) {
-  .page-main__cover {
-    background-image: url(../img/bg-back-tablet@1x.jpg); }
-  .page-main__cover--site-menu {
+  .page-main--shift {
     -webkit-transform: translateY(250px);
-            transform: translateY(250px); } }
+            transform: translateY(250px); }
+  .page-main__cover {
+    background-image: url(../img/bg-back-tablet@1x.jpg); } }
 
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .page-main__cover {

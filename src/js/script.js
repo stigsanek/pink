@@ -1,6 +1,6 @@
 var menu = document.querySelector(".site-menu");
 var menuOpen = document.querySelector(".page-header__toggle");
-var cover = document.querySelector(".page-main__cover");
+var pageMain = document.querySelector(".page-main");
 var pageHeader = document.querySelector(".page-header");
 var icoOpen = document.querySelector(".page-header__ico-open");
 var icoClosed = document.querySelector(".page-header__ico-closed");
@@ -14,10 +14,10 @@ menuOpen.addEventListener("click", function (evt) {
         menu.classList.add("site-menu--open");
       }
 
-      if (cover.classList.contains("page-main__cover--site-menu")) {
-        cover.classList.remove("page-main__cover--site-menu");
+      if (pageMain.classList.contains("page-main--shift")) {
+        pageMain.classList.remove("page-main--shift");
       } else {
-        cover.classList.add("page-main__cover--site-menu");
+        pageMain.classList.add("page-main--shift");
       }
 
       if (pageHeader.classList.contains("page-header--background")) {
