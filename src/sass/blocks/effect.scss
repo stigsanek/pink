@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
 }
 
-.effect__lin {
+.effect__link {
   color: rgb(210, 40, 86);
 }
 
@@ -34,9 +34,9 @@
 
     & .effect__header {
       @include font(30px, 36px);
-      width: 65%;
+      width: 60%;
       @include reset;
-      padding-top: 35px;
+      padding-top: 33px;
     }
 
     & .effect__text {
@@ -53,17 +53,15 @@
 
 @media (min-width: $desktop) {
   .effect {
-    padding-top: 65px;
+    padding-top: 40px;
     background-color: rgb(242, 242, 242);
   }
 
   .effect__promo {
-    width: 100%;
     min-height: auto;
-    height: auto;
     text-align: left;
-    padding: 95px 0 55px 365px;
-    background-position: left 0;
+    padding: 100px 0 40px 365px;
+    background-position: left bottom;
     background-size: 300px auto;
 
     & .effect__header {

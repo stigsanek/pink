@@ -17,6 +17,10 @@
   transform: rotate(-180deg);
 }
 
+.page-main__reviews {
+  position: relative;
+}
+
 @media (min-width: $mobile) {
   .page-main__wrapper {
     width: 280px;
@@ -62,6 +66,7 @@
 @media (min-width: $desktop) {
   .page-main__wrapper {
     width: 940px;
+    padding: 10px 0;
   }
 
   .page-main__cover {
