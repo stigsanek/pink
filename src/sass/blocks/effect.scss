@@ -1,0 +1,86 @@
+.effect__promo {
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+}
+
+.effect__lin {
+  color: rgb(210, 40, 86);
+}
+
+.effect__header {
+  font-family: $f-bold;
+}
+
+@media (min-width: $mobile) {
+  .effect {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .effect {
+    display: block;
+    padding: 65px 0 60px 0;
+  }
+
+  .effect__promo {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 278px;
+    text-align: left;
+    padding: 0 0 25px 310px;
+    background-position: left 0;
+    background-size: 240px auto;
+
+    & .effect__header {
+      @include font(30px, 36px);
+      width: 65%;
+      @include reset;
+      padding-top: 35px;
+    }
+
+    & .effect__text {
+      width: 100%;
+      margin-bottom: 5px;
+      @include font(14px, 24px);
+    }
+  }
+
+  .effect__link {
+    @include font(14px, 24px);
+  }
+}
+
+@media (min-width: $desktop) {
+  .effect {
+    padding-top: 65px;
+    background-color: rgb(242, 242, 242);
+  }
+
+  .effect__promo {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    text-align: left;
+    padding: 95px 0 55px 365px;
+    background-position: left 0;
+    background-size: 300px auto;
+
+    & .effect__header {
+      @include font(30px, 30px);
+      margin-bottom: 20px;
+      padding-top: 0;
+    }
+
+    & .effect__text {
+      width: 100%;
+      padding-top: 5px;
+      margin-bottom: 30px;
+      @include font(18px, 30px);
+    }
+  }
+
+  .effect__link {
+    @include font(18px, 30px);
+  }
+}
