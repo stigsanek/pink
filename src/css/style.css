@@ -392,7 +392,8 @@ body {
     padding: 12px 0 18px 0; }
   .page-header__site-menu {
     position: absolute;
-    top: 70px; }
+    top: 70px;
+    left: 0; }
   .page-header__ico-mobile {
     display: block; }
   .page-header__ico-tablet {
@@ -462,9 +463,7 @@ body {
 @media (min-width: 320px) and (max-width: 959px) {
   .site-menu {
     display: none;
-    width: 100%;
-    position: absolute;
-    left: 0; }
+    width: 100%; }
   .site-menu--open {
     display: block; }
   .site-menu__list {
@@ -535,10 +534,19 @@ body {
   align-self: center; }
 
 .promo__item-link {
-  width: 47px;
   align-self: flex-end; }
-  .promo__item-link a {
-    display: block; }
+  .promo__item-link .promo__download {
+    display: block;
+    width: 47px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center bottom; }
+  .promo__item-link .promo__download--apple {
+    background-image: url("../img/logo-apple.svg"); }
+  .promo__item-link .promo__download--android {
+    background-image: url("../img/logo-android.svg"); }
+  .promo__item-link .promo__download--windows {
+    background-image: url("../img/logo-microsoft.svg"); }
   .promo__item-link span {
     position: absolute;
     width: 1px;
@@ -584,7 +592,7 @@ body {
   .promo__button {
     margin-bottom: 30px; }
   .promo__list-link {
-    margin-bottom: 17px; }
+    margin-bottom: 25px; }
   .promo__text {
     font-size: 14px;
     line-height: 24px;
@@ -617,7 +625,7 @@ body {
   .promo__button {
     margin-bottom: 45px; }
   .promo__list-link {
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
   .promo__text {
     font-size: 18px;
     line-height: 24px;
@@ -644,7 +652,7 @@ body {
   .promo__button {
     margin-bottom: 66px; }
   .promo__list-link {
-    margin-bottom: 45px; } }
+    margin-bottom: 53px; } }
 
 .page-main__cover {
   margin-top: -135px;

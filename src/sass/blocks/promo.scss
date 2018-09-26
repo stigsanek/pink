@@ -32,11 +32,26 @@
 }
 
 .promo__item-link {
-  width: 47px;
   align-self: flex-end;
 
-  & a {
+  & .promo__download {
     display: block;
+    width: 47px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  & .promo__download--apple {
+    background-image: url("../img/logo-apple.svg");
+  }
+
+  & .promo__download--android {
+    background-image: url("../img/logo-android.svg");
+  }
+
+  & .promo__download--windows {
+    background-image: url("../img/logo-microsoft.svg");
   }
 
   & span {
@@ -84,7 +99,7 @@
   }
 
   .promo__list-link {
-    margin-bottom: 17px;
+    margin-bottom: 25px;
   }
 
   .promo__text {
@@ -128,7 +143,7 @@
   }
 
   .promo__list-link {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .promo__text {
@@ -164,6 +179,6 @@
   }
 
   .promo__list-link {
-    margin-bottom: 45px;
+    margin-bottom: 53px;
   }
 }
