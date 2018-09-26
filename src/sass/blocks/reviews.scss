@@ -46,6 +46,35 @@
   }
 }
 
+.reviews__control-button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $text-color;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reviews__control-button--active {
+  background-color: transparent;
+  border: 3px solid $text-color;
+  opacity: 1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
 .reviews__arrow-list {
   @include reset;
   width: 940px;
@@ -113,35 +142,6 @@
 
   .reviews__control-list {
     display: flex;
-  }
-
-  .reviews__control-button {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: $text-color;
-    opacity: 0.3;
-
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.1;
-    }
-  }
-
-  .reviews__control-button--active {
-    background-color: transparent;
-    border: 3px solid $text-color;
-    opacity: 1;
-
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: 1;
-    }
   }
 }
 

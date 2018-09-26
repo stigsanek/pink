@@ -1,0 +1,258 @@
+.price {
+  transform: rotate(180deg);
+}
+
+.price__header {
+  @include vh;
+}
+
+.price__wrapper {
+  @include wrapper;
+  overflow: hidden;
+  transform: rotate(-180deg);
+}
+
+.price__table {
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+
+  & td,
+  & th {
+    width: 25%;
+  }
+}
+
+.price__rate {
+  color: rgb(255, 255, 255);
+  background-color: $text-color;
+  border-right: 2px solid rgb(255, 255, 255);
+
+  & span {
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+.price__rate--transparent {
+  background-color: transparent;
+  border-right: none;
+}
+
+.price__rate--hit {
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 27px;
+    position: absolute;
+    background-image: url("../img/hit.png");
+  }
+}
+
+.price__value {
+  border: 2px solid rgb(229, 229, 229);
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.price__value--yes {
+  background-image: url("../img/icon-yes.svg");
+  background-size: 31px auto;
+}
+
+.price__value--no {
+  background-image: url("../img/icon-no.svg");
+  background-size: 27px auto;
+}
+
+.price__control-list {
+  @include reset;
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+
+  & span {
+    @include vh;
+  }
+}
+
+.price__control-button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $text-color;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.price__control-button--active {
+  background-color: transparent;
+  border: 3px solid $text-color;
+  opacity: 1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $mobile) {
+  .price {
+    padding: 45px 0 130px 0;
+    background-image:
+      linear-gradient(-4deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 65px, rgb(242, 242, 242) 65px, rgb(242, 242, 242) 100%);
+  }
+
+  .price__wrapper {
+    padding: 0;
+  }
+
+  .price__table {
+    width: 840px;
+    margin-bottom: 38px;
+  }
+
+  .price__rate:first-child,
+  .price__value:first-child {
+    display: none;
+  }
+
+  .price__rate {
+    font-family: $f-light;
+    font-weight: 100;
+    padding: 18px 24px;
+    @include font(24px, 30px);
+
+    & span {
+      font-family: $f-bold;
+      @include font(18px, 30px);
+    }
+  }
+
+  .price__value {
+    padding: 15px 23px;
+    @include font(14px, 30px);
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: center right 18px;
+  }
+
+  .price__rate--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+
+    &::before {
+      left: 6px;
+      top: 6px;
+    }
+  }
+
+  .price__control-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet) {
+  .price {
+    padding: 65px 0 110px 0;
+    background-image:
+      linear-gradient(-4deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 70px, rgb(242, 242, 242) 70px, rgb(242, 242, 242) 100%);
+  }
+
+  .price__wrapper {
+    padding: 0 10px;
+  }
+
+  .price__table {
+    width: 620px;
+    margin-bottom: 0;
+  }
+
+  .price__rate:first-child,
+  .price__value:first-child {
+    display: table-cell;
+  }
+
+  .price__rate {
+    font-family: $f-light;
+    @include font(18px, 30px);
+    font-weight: 100;
+    padding: 10px 24px;
+
+    & span {
+      font-family: $f-bold;
+      @include font(16px, 30px);
+    }
+  }
+
+  .price__value {
+    padding: 7px 15px;
+    background-position: center;
+    text-transform: none;
+  }
+
+  .price__value:not(:first-of-type) span {
+    @include vh;
+  }
+
+  .price__control-list {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .price {
+    padding: 90px 0 190px 0;
+    background-image:
+      linear-gradient(-4deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 130px, rgb(242, 242, 242) 130px, rgb(242, 242, 242) 100%);
+  }
+
+  .price__table {
+    width: 940px;
+  }
+
+  .price__rate {
+    font-family: $f-light;
+    font-weight: 100;
+    @include font(24px, 30px);
+    padding: 18px 24px;
+
+    & span {
+      font-family: $f-bold;
+      @include font(18px, 30px);
+    }
+  }
+
+  .price__value {
+    @include font(18px, 30px);
+    padding: 15px 23px;
+  }
+
+  .price__rate--hit {
+    background-image: url("../img/bg-hit.svg");
+
+    &::before {
+      left: 10px;
+      top: 12px;
+    }
+  }
+}
