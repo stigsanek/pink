@@ -16,11 +16,6 @@
   margin: 0 auto;
   text-align: center;
   border-collapse: collapse;
-
-  & td,
-  & th {
-    width: 25%;
-  }
 }
 
 .price__rate {
@@ -128,8 +123,25 @@
   }
 
   .price__table {
-    width: 840px;
+    width: 258vw;
     margin-bottom: 38px;
+    transform: translateX(-79vw);
+    transition: 0.2s;
+
+    & td,
+    & th {
+      width: 86vw;
+    }
+  }
+
+  .price__table--right {
+    transform: translateX(0vw);
+    transition: 0.2s;
+  }
+
+  .price__table--left {
+    transform: translateX(-158vw);
+    transition: 0.2s;
   }
 
   .price__rate:first-child,
@@ -185,6 +197,12 @@
   .price__table {
     width: 620px;
     margin-bottom: 0;
+    transform: translateX(0);
+
+    & td,
+    & th {
+      width: 25%;
+    }
   }
 
   .price__rate:first-child,

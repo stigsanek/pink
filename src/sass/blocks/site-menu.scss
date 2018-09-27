@@ -38,6 +38,8 @@
 
   .site-menu--open {
     display: block;
+    animation-name: move;
+    animation-duration: 0.2s;
   }
 
   .site-menu__list {
@@ -72,5 +74,29 @@
 
   .site-menu__active {
     border-bottom: none;
+  }
+}
+
+@media (min-width: $mobile) {
+   @keyframes move {
+    0% {
+      transform: translateY(-15px);
+    }
+
+    100% {
+      display: translateY(15px);
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+   @keyframes move {
+    0% {
+      transform: translateY(-30px);
+    }
+
+    100% {
+      display: translateY(30px);
+    }
   }
 }
