@@ -1,0 +1,168 @@
+.contacts__container {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.contacts__wrapper {
+  @include wrapper;
+  padding: 0 20px;
+}
+
+.contacts__header {
+  @include vh;
+}
+
+.contacts__promo {
+  margin: 0 auto;
+  text-align: center;
+  font-family: $f-light;
+  font-weight: 100;
+}
+
+.contacts__list {
+  @include reset;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.contacts__item {
+  width: 240px;
+}
+
+.contacts__item-header {
+  display: block;
+  font-family: $f-bold;
+}
+
+.contacts__item-text {
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  font-family: $f-light;
+  font-weight: 100;
+  color: rgb(210, 40, 86);
+}
+
+.contacts__item-text--mail {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: $text-color;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $text-color;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $mobile) {
+  .contacts {
+    padding-top: 45px;
+  }
+
+  .contacts__promo {
+    @include font(24px, 30px);
+    margin-bottom: 28px;
+    width: 230px;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+  }
+
+  .contacts__item-header {
+    @include font(18px, 30px);
+  }
+
+  .contacts__item-text {
+    @include font(24px, 30px);
+  }
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    padding-top: 50px;
+  }
+
+  .contacts__promo {
+    @include font(40px, 47px);
+    width: 370px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    margin-left: -20px;
+
+    &:nth-of-type(2) {
+      margin-right: -20px;
+    }
+
+    &:last-of-type {
+      margin-top: 32px;
+      margin-right: -20px;
+      width: 100%;
+
+      & .contacts__item-text {
+        width: 215px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    padding-top: 70px;
+  }
+
+  .contacts__promo {
+    @include font(50px, 57px);
+    width: 470px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__list {
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    margin-left: -20px;
+
+    &:nth-of-type(2) {
+      order: 1;
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+      margin-right: 0;
+      width: 240px;
+    }
+  }
+
+  .contacts__item-header {
+    margin-bottom: 20px;
+  }
+}

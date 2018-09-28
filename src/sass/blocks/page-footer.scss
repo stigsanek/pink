@@ -1,0 +1,11 @@
+@media (min-width: $mobile) {
+  .page-footer--shift {
+    transform: translateY(305px);
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-footer--shift {
+    transform: translateY(250px);
+  }
+}

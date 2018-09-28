@@ -86,10 +86,10 @@
       </a>
       <button class="page-header__toggle" type="button">
         <svg class="page-header__ico-open" width="50" height="25">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use>
+          <use xlink:href="#icon-menu-burger"></use>
         </svg>
         <svg class="page-header__ico-closed" width="50" height="25">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-cross"></use>
+          <use xlink:href="#icon-menu-cross"></use>
         </svg>
         <span>Открыть меню</span>
       </button>
@@ -234,23 +234,26 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__header">Контакты</h2>
-      <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <span class="contacts__item-header">Звоните:</span>
-          <span class="contacts__item-text">+7 (812) 555-66-66</span>
-        </li>
-        <li class="contacts__item">
-          <span class="contacts__item-header">Приезжайте в гости:</span>
-          <span class="contacts__item-text">ул. Большая Конюшенная, 19/8</span>
-        </li>
-        <li class="contacts__item">
-          <span class="contacts__item-header">Пишите</span>
-          <span class="contacts__item-text">mail@htmlacademy.ru</span>
-        </li>
-      </ul>
-      <img class="contacts__map" src="#" alt="Карта с меткой адреса">
+      <div class="contacts__container">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__header">Контакты</h2>
+          <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__item-header">Звоните:</span>
+              <span class="contacts__item-text">+7 (812) 555-66-66</span>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__item-header">Пишите:</span>
+              <a class="contacts__item-text contacts__item-text--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__item-header">Приезжайте в гости:</span>
+              <span class="contacts__item-text">ул. Большая Конюшенная, 19/8</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   <!---->

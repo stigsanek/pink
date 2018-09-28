@@ -3,6 +3,7 @@ var menu = document.querySelector(".site-menu");
 var menuOpen = document.querySelector(".page-header__toggle");
 var pageMain = document.querySelector(".page-main");
 var pageHeader = document.querySelector(".page-header");
+var pageFooter = document.querySelector(".page-footer");
 var icoOpen = document.querySelector(".page-header__ico-open");
 var icoClosed = document.querySelector(".page-header__ico-closed");
 
@@ -19,6 +20,12 @@ menuOpen.addEventListener("click", function (evt) {
     pageMain.classList.remove("page-main--shift");
   } else {
     pageMain.classList.add("page-main--shift");
+  }
+
+  if (pageFooter.classList.contains("page-footer--shift")) {
+    pageFooter.classList.remove("page-footer--shift");
+  } else {
+    pageFooter.classList.add("page-footer--shift");
   }
 
   if (pageHeader.classList.contains("page-header--background")) {
