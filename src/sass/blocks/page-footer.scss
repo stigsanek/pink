@@ -1,11 +1,163 @@
+.page-footer__wrapper {
+  @include wrapper;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__ico-desktop,
+.page-footer__ico-mobile {
+  fill: $text-color;
+
+  &:hover,
+  &:focus {
+    fill: rgb(210, 40, 86);
+  }
+
+  &:active {
+    fill: rgb(210, 40, 86);
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-list {
+  @include reset;
+  list-style: none;
+  display: flex;
+  width: 180px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  & span {
+    @include vh;
+  }
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgb(233, 235, 236);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+    border-color: $text-color;
+  }
+
+  &:active {
+    border-color: $text-color;
+    opacity: 0.1;
+  }
+}
+
+.page-footer__social-link--tw {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+.page-footer__social-link--fb {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.page-footer__social-link--yt {
+  background-image: url("../img/icon-youtube.svg");
+  background-position: 17px, center;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  & svg {
+    fill: rgb(210, 40, 86);
+
+    &:hover,
+    &:focus {
+      fill: $text-color;
+    }
+
+    &:active {
+      fill: $text-color;
+      opacity: 0.3;
+    }
+  }
+}
+
+
 @media (min-width: $mobile) {
+  .page-footer {
+    display: none;
+  }
+
   .page-footer--shift {
     transform: translateY(305px);
   }
 }
 
 @media (min-width: $tablet) {
+  .page-footer {
+    display: block;
+    padding: 35px 0;
+  }
+
+  .page-footer__ico-desktop {
+    display: none;
+  }
+
+  .page-footer__social-list {
+    margin-left: -10px;
+  }
+
+  .page-footer__copyright {
+    width: 130px;
+    @include font(14px, 18px);
+    margin-top: 5px;
+
+    & a {
+      margin-top: 10px;
+    }
+  }
+
   .page-footer--shift {
     transform: translateY(250px);
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    padding: 75px 0;
+  }
+
+  .page-footer__logo {
+    margin-top: -20px;
+  }
+
+  .page-footer__ico-desktop {
+    display: block;
+  }
+
+  .page-footer__ico-mobile {
+    display: none;
+  }
+
+  .page-footer__social-list {
+    margin-left: 0;
+  }
+
+  .page-footer__copyright {
+    width: 153px;
+    @include font(18px, 18px);
+    margin-top: 0;
+
+    & a {
+      margin-top: 5px;
+    }
   }
 }
