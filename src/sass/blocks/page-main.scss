@@ -40,16 +40,14 @@
 
   .page-main__cover {
     background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-size: 100%;
-    background-position: 50% 40px;
+    background-size: 700px;
+    background-position: center 42px;
   }
 
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
     .page-main__cover {
       background-image: url(../img/bg-back-mobile@2x.jpg);
-      background-size: 220%;
-      background-position: 50% 40px;
     }
   }
 
@@ -70,8 +68,8 @@
 
   .page-main__cover {
     background-image: url(../img/bg-back-tablet@1x.jpg);
-    background-size: 180%;
-    background-position: top;
+    background-size: 1200px;
+    background-position: center 5px;
   }
 
   @media (min-resolution: 144dpi),
@@ -95,6 +93,8 @@
 
   .page-main__cover {
     background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-size: 2560px;
+    background-position: center 15px;
   }
 
   @media (min-resolution: 144dpi),
