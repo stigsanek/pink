@@ -1,7 +1,5 @@
 .promo {
   @include wrapper;
-  display: flex;
-  flex-wrap: wrap;
   background-repeat: no-repeat;
 }
 
@@ -68,10 +66,10 @@
 
 @media (min-width: $mobile) {
   .promo {
-    padding-top: 480px;
+    padding-top: 505px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-size: 258px auto;
-    background-position: center 195px;
+    background-position: center 220px;
   }
 
   @media (min-resolution: 144dpi),
@@ -110,7 +108,7 @@
 
 @media (min-width: $tablet) {
   .promo {
-    padding: 235px 20px 110px 20px;
+    padding: 210px 20px 110px 20px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: 700px auto;
     background-position: right -20px bottom 0;
@@ -139,7 +137,7 @@
   }
 
   .promo__button {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .promo__list-link {
@@ -154,7 +152,7 @@
 
 @media (min-width: $desktop) {
   .promo {
-    padding: 250px 20px 120px 20px;
+    padding: 225px 20px 120px 20px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px auto;
     background-position: 35px bottom;
@@ -179,6 +177,6 @@
   }
 
   .promo__list-link {
-    margin-bottom: 53px;
+    margin-bottom: 57px;
   }
 }
