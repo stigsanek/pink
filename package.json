@@ -9,7 +9,7 @@
     "start": "npm run build && gulp serve"
   },
   "browserslist": [
-    "last 4 version",
+    "last 1 version",
     "> 1%",
     "maintained node versions",
     "not dead"
@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/stigsanek/pink#readme",
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "browser-sync": "^2.24.7",
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-csso": "^3.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "run-sequence": "^2.2.1"
   }
 }
