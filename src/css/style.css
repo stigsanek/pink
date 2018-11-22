@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1727,7 +1728,9 @@ body {
 .photo__list {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
 
 .photo-item__header {
   position: absolute;
@@ -1743,8 +1746,10 @@ body {
   overflow: hidden; }
 
 .photo-item__block {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f2f2f2;
-  padding: 25px 15px;
+  padding: 15px 17px;
   margin-top: -8px; }
 
 .photo-item__wrapper {
@@ -1772,18 +1777,59 @@ body {
   font-family: "Open Sans Regular", "Arial", sans-serif; }
 
 .photo-item__like {
+  position: relative;
   font-size: 12px;
   line-height: 24px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   text-transform: uppercase;
-  color: #d22856; }
+  color: #d22856;
+  display: block;
+  padding-left: 33px; }
+  .photo-item__like::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    background-image: url("../img/icon-heart.svg");
+    left: 0;
+    top: 5px; }
+
+.photo-item__block--img-day::before {
+  content: "Панорама дня";
+  position: absolute;
+  width: 140px;
+  height: 31px;
+  padding-top: 5px;
+  background-color: #d22856;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  right: 20px;
+  top: 0; }
 
 @media (min-width: 320px) {
+  .photo-item--full-width {
+    position: relative; }
+  .photo-item__block {
+    flex-direction: column; }
+  .photo-item__text {
+    margin-bottom: 13px; }
   .photo__text {
     font-size: 14px;
     line-height: 30px;
     padding: 45px 0 48px 0;
-    width: 250px; } }
+    width: 250px; }
+  .photo-item--full-width {
+    margin-bottom: 25px; }
+  .photo__list {
+    flex-direction: column; }
+    .photo__list li {
+      margin-bottom: 23px; }
+    .photo__list li:last-of-type {
+      margin-bottom: 0; } }
 
 @media (min-width: 660px) {
   .photo__text {
@@ -1792,11 +1838,63 @@ body {
     padding: 90px 0 78px 0;
     width: 440px; }
   .photo-item--full-width .photo-item__img {
-    height: 509px; } }
+    height: 509px; }
+  .photo-item__block {
+    padding: 23px 27px; }
+  .photo-item__block--img-day {
+    flex-direction: row;
+    justify-content: space-between; }
+    .photo-item__block--img-day .photo-item__author {
+      order: -2; }
+    .photo-item__block--img-day .photo-item__like {
+      order: -1; }
+    .photo-item__block--img-day .photo-item__like {
+      padding-left: 0;
+      padding-right: 33px; }
+      .photo-item__block--img-day .photo-item__like::before {
+        left: 105px; }
+    .photo-item__block--img-day::before {
+      top: 57px; }
+  .photo-item--full-width {
+    margin-bottom: 50px; }
+  .photo__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px; }
+    .photo__list li {
+      width: 300px;
+      margin-bottom: 20px; }
+      .photo__list li:nth-last-of-type(1), .photo__list li:nth-last-of-type(2) {
+        margin-bottom: 0; }
+    .photo__list .photo-item__block {
+      height: 109px; }
+      .photo__list .photo-item__block .photo-item__like {
+        margin-top: auto;
+        width: 100%;
+        padding-left: 0; }
+        .photo__list .photo-item__block .photo-item__like::before {
+          left: 228px; }
+  .photo-item__text {
+    margin-bottom: 0; } }
 
 @media (min-width: 960px) {
+  .photo-item--full-width {
+    position: static; }
+  .photo-item__block--img-day {
+    position: relative; }
+    .photo-item__block--img-day::before {
+      right: 0;
+      top: -453px; }
   .photo__text {
     padding: 90px 0 90px 0;
     width: 580px; }
   .photo-item--full-width .photo-item__img {
-    height: 506px; } }
+    height: 506px; }
+  .photo-item--full-width {
+    margin-bottom: 40px; }
+  .photo__list {
+    width: 940px; }
+    .photo__list li {
+      margin-bottom: 53px; }
+      .photo__list li:nth-last-of-type(1), .photo__list li:nth-last-of-type(2), .photo__list li:nth-last-of-type(3) {
+        margin-bottom: 0; } }
