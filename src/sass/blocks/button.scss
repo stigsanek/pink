@@ -18,6 +18,44 @@
   }
 }
 
+.button--red {
+  border-color: rgb(210, 40, 86);
+  color: rgb(210, 40, 86);
+
+  &:hover,
+  &:focus {
+    background-color: rgb(210, 40, 86);
+    color: rgb(255, 255, 255);
+  }
+
+  &:active {
+    background-color: rgb(210, 40, 86);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--gray {
+  border-color: #283645;
+  color: rgb(40, 54, 69);
+  background-color: transparent;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+    color: rgb(40, 54, 69);
+    background-color: transparent;
+    opacity: 0.3;
+  }
+
+  &:active {
+    border-color: #283645;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #283645;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $mobile) {
   .button {
     @include font(18px, 18px);
@@ -30,10 +68,20 @@
     @include font(18px, 18px);
     width: 300px;
   }
+
+  .button--red,
+  .button--gray {
+    width: 260px;
+  }
 }
 
 @media (min-width: $desktop) {
   .button {
     @include font(21px, 21px);
+  }
+
+  .button--red,
+  .button--gray {
+    width: 180px;
   }
 }
