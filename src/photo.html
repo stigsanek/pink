@@ -111,7 +111,7 @@
       <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
     </symbol>
-    <symbol viewBox="22.5 69.048 253 253" if="editor-logo">
+    <symbol viewBox="22.5 69.048 253 253" id="editor-logo">
       <path d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z" />
     </symbol>
   </svg>
@@ -313,7 +313,37 @@
             <img src="img/photo-road-desktop@1x.jpg" alt="Зимний пейзаж" srcset="img/photo-road-desktop@2x.jpg 2x">
           </picture>
           <div class="publish__form">
-            <div class="publich__config">
+            <div class="publish__config">
+              <div class="publish__ico publish__ico--crop">
+                <svg width="22" height="22">
+                  <use xlink:href="#crop-logo"></use>
+                </svg>
+              </div>
+              <div class="publish__editor publish__editor--crop">
+                <svg width="14" height="14">
+                  <use xlink:href="#editor-logo"></use>
+                </svg>
+              </div>
+              <div class="publish__ico publish__ico--fill">
+                <svg width="22" height="22">
+                  <use xlink:href="#fill-logo"></use>
+                </svg>
+              </div>
+              <div class="publish__editor publish__editor--fill">
+                <svg width="14" height="14">
+                  <use xlink:href="#editor-logo"></use>
+                </svg>
+              </div>
+              <div class="publish__ico publish__ico--contrast">
+                <svg width="16" height="16">
+                  <use xlink:href="#contrast-logo"></use>
+                </svg>
+              </div>
+              <div class="publish__editor publish__editor--contrast">
+                <svg width="14" height="14">
+                  <use xlink:href="#editor-logo"></use>
+                </svg>
+              </div>
             </div>
             <button class="button button--red" type="button">Запостить</button>
             <button class="button button--gray" type="button">Отмена</button>

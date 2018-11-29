@@ -19,6 +19,7 @@
 }
 
 .button--red {
+  margin-bottom: 24px;
   border-color: rgb(210, 40, 86);
   color: rgb(210, 40, 86);
 
@@ -82,6 +83,11 @@
 
   .button--red,
   .button--gray {
-    width: 180px;
+    @include font(18px, 18px);
+    width: 183px;
+  }
+
+  .button--red {
+    margin-right: 39px;
   }
 }
