@@ -62,12 +62,20 @@
     @include font(18px, 18px);
     width: 280px;
   }
+
+  .button--gray {
+    margin-top: -10px;
+  }
 }
 
 @media (min-width: $tablet) {
   .button {
     @include font(18px, 18px);
     width: 300px;
+  }
+
+  .button--gray {
+    margin-top: 0;
   }
 
   .button--red,
