@@ -55,6 +55,10 @@
     padding: 140px 20px 82px 20px;
     @include font(24px, 30px);
   }
+
+  .page-main__header--form {
+    padding: 140px 20px 52px 20px;
+  }
 }
 
 @media (min-width: $tablet) {

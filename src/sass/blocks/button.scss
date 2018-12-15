@@ -57,6 +57,26 @@
   }
 }
 
+.button--green {
+  color: rgb(255, 255, 255);
+  background-color: rgb(42, 171, 109);
+  border-radius: 2px;
+  height: 62px;
+  border: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(28, 155, 94);
+    color: rgb(255, 255, 255);
+  }
+
+  &:active {
+    background-color: rgb(28, 155, 94);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-width: $mobile) {
   .button {
     @include font(18px, 18px);
@@ -65,6 +85,10 @@
 
   .button--gray {
     margin-top: -10px;
+  }
+
+  .button--green {
+    @include font(18px, 30px);
   }
 }
 

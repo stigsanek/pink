@@ -155,7 +155,7 @@
   <!--Разметка основного содержимого-->
   <main class="page-main">
     <div class="page-main__cover">
-      <h1 class="page-main__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-main__header page-main__header--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <section class="form">
       <div class="page-main__wrapper">
@@ -164,62 +164,72 @@
         <form class="form__set" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fields form__fields--hidden">
             <legend class="form__fieldset-header form__fieldset-header--hidden">Личные данные</legend>
-            <div class="form__container">
-              <label for="lastname">Фамилия: </label>
-              <input id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*" required>
-              <label for="firstname">Имя: </label>
-              <input id="firstname" type="text" name="firstname" placeholder="Введите ваше имя*" required>
-              <label for="secondname">Отчество: </label>
-              <input id="secondname" type="text" name="secondname" placeholder="Ну и отчество тоже">
+            <div class="form__container form__container--color form__container--name">
+              <div class="form__fieldcontainer">
+                <label for="lastname">Фамилия: </label>
+                <input id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="form__fieldcontainer">
+                <label for="firstname">Имя: </label>
+                <input id="firstname" type="text" name="firstname" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="form__fieldcontainer">
+                <label for="secondname">Отчество: </label>
+                <input id="secondname" type="text" name="secondname" placeholder="Ну и отчество тоже">
+              </div>
             </div>
           </fieldset>
-          <fieldset class="form__fields">
-            <legend class="form__fieldset-header">С каким приложением путешествовали?</legend>
+          <fieldset class="form__fields form__fields--gray">
+            <legend class="form__fieldset-header form__fieldset-header--gray">С каким приложением путешествовали?</legend>
             <div class="form__container">
               <input id="app-ios" name="appfield" type="radio" value="ios" checked>
               <label for="app-ios">Pink для iOS</label>
               <input id="app-android" name="appfield" type="radio" value="android">
-              <label for="app-android">Pink для Android</label>
+              <label for="app-android">Pink на Android</label>
               <input id="app-windows" name="appfield" type="radio" value="windows">
-              <label for="app-windows">Pink для Windows</label>
+              <label for="app-windows">Windows Phone</label>
             </div>
           </fieldset>
           <fieldset class="form__fields">
             <legend class="form__fieldset-header">Контактная информация</legend>
-            <div class="form__container">
+            <div class="form__container form__container--color form__container--contact">
+             <div class="form__fieldcontainer">
               <input id="telfield" type="tel" name="telfield" placeholder="Номер, пожалуйста">
               <label for="telfield">Номер телефона</label>
+              </div>
+              <div class="form__fieldcontainer">
               <input id="emailfield" type="email" name="emailfield" placeholder="Введите почту*" required>
               <label for="emailfield">Адрес почты</label>
+              </div>
             </div>
           </fieldset>
-          <fieldset class="form__fields">
+          <fieldset class="form__fields form__fields--gray">
             <legend class="form__fieldset-header">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__container">
               <input id="box1" type="checkbox" name="box1" checked>
               <label for="box1">Сделал селфи с акулой</label>
-              <input id="box2" type="checkbox" name="box2">
-              <label for="box2">Видел Чака Норриса</label>
-              <input id="box3" type="checkbox" name="box3" checked>
-              <label for="box3">Удержал башню</label>
-              <input id="box4" type="checkbox" name="box4" checked>
-              <label for="box4">Обгорел на пляже</label>
-              <input id="box5" type="checkbox" name="box5">
-              <label for="box5">Накупил сувениров</label>
+              <input id="box2" type="checkbox" name="box2" checked>
+              <label for="box2">Обгорел на пляже</label>
+              <input id="box3" type="checkbox" name="box3">
+              <label for="box3">Видел Чака Норриса</label>
+              <input id="box4" type="checkbox" name="box4">
+              <label for="box4">Накупил сувениров</label>
+              <input id="box5" type="checkbox" name="box5" checked>
+              <label for="box5">Удержал башню</label>
               <input id="box6" type="checkbox" name="box6">
               <label for="box6">Разгромил отель</label>
             </div>
           </fieldset>
           <fieldset class="form__fields">
-            <legend class="form__fieldset-header">Опишите свои эмоции</legend>
+            <legend class="form__fieldset-header form__fieldset-header--text">Опишите свои эмоции</legend>
             <div class="form__container">
               <textarea id="textfield" name="textfield">Можно прям в красках, не стесняясь в выражениях</textarea>
               <label for="textfield">Свободный комментарий</label>
             </div>
           </fieldset>
           <div class="form__submit">
-            <button class="button" type="submit">Отправить форму</button>
-            <p class="form__fn"><span>*</span> - Обязательные для заполнения поля</p>
+            <button class="button button--green" type="submit">Отправить форму</button>
+            <p class="form__fn"><span class="form__colorfn">*</span> &#8212; Обязательные <span class="form__hiddenfn">для заполнения </span>поля</p>
           </div>
         </form>
       </div>
