@@ -2358,7 +2358,7 @@ label[for="textfield"] {
   top: 250px;
   left: 50%; }
 
-.modal-window--false {
+.modal-window--show {
   display: block; }
 
 @media (min-width: 320px) {
