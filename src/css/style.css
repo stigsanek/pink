@@ -2269,7 +2269,7 @@ body {
   flex-wrap: wrap; }
 
 .form__fieldset-header,
-.form__container--color label {
+.form__container-color-label {
   text-transform: uppercase;
   color: #d22856; }
 
@@ -2277,7 +2277,7 @@ body {
   font-size: 14px;
   line-height: 18px; }
 
-.form__container--color label {
+.form__container-color-label {
   font-size: 14px;
   line-height: 30px; }
 
@@ -2336,7 +2336,7 @@ label[for="textfield"] {
   .form__container {
     flex-direction: column;
     width: 280px; }
-  .form__container--color label {
+  .form__container-color-label {
     display: block;
     padding-left: 23px; }
   .form__fieldset-header {
@@ -2357,17 +2357,17 @@ label[for="textfield"] {
     margin-bottom: 0; }
   .form__submit {
     order: 6; }
-  .form__container--name .form__fieldcontainer {
+  .form__form-container-name .form__fieldcontainer {
     margin-bottom: 16px; }
-    .form__container--name .form__fieldcontainer:last-child {
+    .form__form-container-name .form__fieldcontainer:last-child {
       margin-bottom: 0; }
-    .form__container--name .form__fieldcontainer label {
+    .form__form-container-name .form__fieldcontainer label {
       display: block;
       margin-bottom: 6px; }
-  .form__fields--gray .form__fieldset-header {
+  .form__form-fields .form__fieldset-header {
     padding-top: 38px;
     margin-bottom: 45px; }
-  .form__fields--gray .form__fieldset-header--gray {
+  .form__form-fields .form__header-field {
     margin-bottom: 38px; }
   input[type="checkbox"] {
     display: none; }
@@ -2398,23 +2398,23 @@ label[for="textfield"] {
     border-left: 2px solid #d22856;
     border-bottom: 2px solid #d22856;
     transform: rotate(-45deg); }
-  .form__container--contact {
+  .form__form-container-contacts {
     padding-top: 33px; }
-  .form__container--contact .form__fieldcontainer {
+  .form__form-container-contacts .form__fieldcontainer {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px; }
-    .form__container--contact .form__fieldcontainer:last-child {
+    .form__form-container-contacts .form__fieldcontainer:last-child {
       margin-bottom: 0; }
-    .form__container--contact .form__fieldcontainer label {
+    .form__form-container-contacts .form__fieldcontainer label {
       margin-bottom: 7px; }
-    .form__container--contact .form__fieldcontainer label[for="telfield"] {
+    .form__form-container-contacts .form__fieldcontainer label[for="telfield"] {
       order: 1; }
-    .form__container--contact .form__fieldcontainer input[type="tel"] {
+    .form__form-container-contacts .form__fieldcontainer input[type="tel"] {
       order: 2; }
-    .form__container--contact .form__fieldcontainer label[for="emailfield"] {
+    .form__form-container-contacts .form__fieldcontainer label[for="emailfield"] {
       order: 1; }
-    .form__container--contact .form__fieldcontainer input[type="email"] {
+    .form__form-container-contacts .form__fieldcontainer input[type="email"] {
       order: 2; }
   input[type="radio"] {
     display: none; }
@@ -2445,7 +2445,7 @@ label[for="textfield"] {
     height: 17px;
     border-radius: 50%;
     background-color: #d22856; }
-  .form__fieldset-header--text {
+  .form__fieldset-header-text {
     padding-top: 40px;
     margin-bottom: 18px; }
   .form__fields:last-of-type {

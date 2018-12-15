@@ -164,23 +164,23 @@
         <form class="form__set" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fields form__fields--hidden">
             <legend class="form__fieldset-header form__fieldset-header--hidden">Личные данные</legend>
-            <div class="form__container form__container--color form__container--name">
+            <div class="form__container form__form-container-name">
               <div class="form__fieldcontainer">
-                <label for="lastname">Фамилия: </label>
+                <label class="form__container-color-label" for="lastname">Фамилия: </label>
                 <input id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*" required>
               </div>
               <div class="form__fieldcontainer">
-                <label for="firstname">Имя: </label>
+                <label class="form__container-color-label" for="firstname">Имя: </label>
                 <input id="firstname" type="text" name="firstname" placeholder="Введите ваше имя*" required>
               </div>
               <div class="form__fieldcontainer">
-                <label for="secondname">Отчество: </label>
+                <label class="form__container-color-label" for="secondname">Отчество: </label>
                 <input id="secondname" type="text" name="secondname" placeholder="Ну и отчество тоже">
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__fields form__fields--gray">
-            <legend class="form__fieldset-header form__fieldset-header--gray">С каким приложением путешествовали?</legend>
+          <fieldset class="form__fields form__form-fields">
+            <legend class="form__fieldset-header form__header-field">С каким приложением путешествовали?</legend>
             <div class="form__container">
               <input id="app-ios" name="appfield" type="radio" value="ios" checked>
               <label for="app-ios">Pink для iOS</label>
@@ -192,18 +192,18 @@
           </fieldset>
           <fieldset class="form__fields">
             <legend class="form__fieldset-header">Контактная информация</legend>
-            <div class="form__container form__container--color form__container--contact">
+            <div class="form__container form__form-container-contacts">
              <div class="form__fieldcontainer">
               <input id="telfield" type="tel" name="telfield" placeholder="Номер, пожалуйста">
-              <label for="telfield">Номер телефона</label>
+              <label class="form__container-color-label" for="telfield">Номер телефона</label>
               </div>
               <div class="form__fieldcontainer">
               <input id="emailfield" type="email" name="emailfield" placeholder="Введите почту*" required>
-              <label for="emailfield">Адрес почты</label>
+              <label class="form__container-color-label" for="emailfield">Адрес почты</label>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__fields form__fields--gray">
+          <fieldset class="form__fields form__form-fields">
             <legend class="form__fieldset-header">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__container">
               <input id="box1" type="checkbox" name="box1" checked>
@@ -221,7 +221,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fields">
-            <legend class="form__fieldset-header form__fieldset-header--text">Опишите свои эмоции</legend>
+            <legend class="form__fieldset-header form__fieldset-header-text">Опишите свои эмоции</legend>
             <div class="form__container">
               <textarea id="textfield" name="textfield">Можно прям в красках, не стесняясь в выражениях</textarea>
               <label for="textfield">Свободный комментарий</label>
