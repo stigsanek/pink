@@ -75,6 +75,11 @@
     background-color: rgb(28, 155, 94);
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &:disabled {
+    color: rgb(255, 255, 255);
+    background-color: rgb(229, 229, 229);
+  }
 }
 
 @media (min-width: $mobile) {
@@ -125,5 +130,9 @@
 
   .button--red {
     margin-right: 39px;
+  }
+
+  .button--modal-green {
+    width: 100%;
   }
 }

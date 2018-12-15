@@ -100,9 +100,51 @@ label[for="textfield"] {
 
 .modal-window {
   display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 250px;
+  left: 50%;
+}
+
+.modal-window--false {
+  display: block;
 }
 
 @media (min-width: $mobile) {
+  .modal-window {
+    width: 280px;
+    background-color: #ffffff;
+    padding: 40px 20px 52px 20px;
+    margin-left: -160px;
+    text-align: center;
+    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .modal-window__header,
+  .modal-window__text {
+    @include reset;
+  }
+
+  .modal-window__header {
+    @include font(18px, 24px);
+    font-family: $f-bold;
+    margin-bottom: 25px;
+  }
+
+  .modal-window__text {
+    @include font(14px, 24px);
+    margin-bottom: 38px;
+  }
+
+  .modal-window--true {
+    background-image:
+      linear-gradient(#ffffff 0%, #ffffff 217px, rgb(242, 242, 242) 217px, rgb(242, 242, 242) 100%);
+
+    & .modal-window__text {
+      margin-bottom: 80px;
+    }
+  }
+
   .form {
     background-image: linear-gradient(#ffffff 0%, #ffffff 538px, rgb(242, 242, 242) 538px, rgb(242, 242, 242) 1142px, #ffffff 1142px, #ffffff 1430px, rgb(242, 242, 242) 1430px, rgb(242, 242, 242) 1770px, #ffffff 1770px, #ffffff 100%);
   }
@@ -343,6 +385,32 @@ label[for="textfield"] {
 }
 
 @media (min-width: $tablet) {
+  .modal-window {
+    width: 300px;
+    padding: 40px 80px 52px 80px;
+    margin-left: -230px;
+    text-align: center;
+  }
+
+  .modal-window__header {
+    @include font(30px, 40px);
+    margin-bottom: 22px;
+  }
+
+  .modal-window__text {
+    @include font(18px, 24px);
+    margin-bottom: 38px;
+  }
+
+  .modal-window--true {
+    background-image:
+      linear-gradient(#ffffff 0%, #ffffff 272px, rgb(242, 242, 242) 272px, rgb(242, 242, 242) 100%);
+
+    & .modal-window__text {
+      margin-bottom: 82px;
+    }
+  }
+
   .form {
     background-image: none;
   }
@@ -505,6 +573,32 @@ label[for="textfield"] {
 }
 
 @media (min-width: $desktop) {
+  .modal-window {
+    width: 360px;
+    padding: 40px 210px 52px 210px;
+    margin-left: -390px;
+    text-align: center;
+    background-image:
+      linear-gradient(#ffffff 0%, #ffffff 214px, rgb(242, 242, 242) 214px, rgb(242, 242, 242) 100%);
+  }
+
+  .modal-window__header {
+    margin-bottom: 22px;
+  }
+
+  .modal-window__text {
+    margin-bottom: 110px;
+  }
+
+  .modal-window.modal-window--true {
+    width: 460px;
+    padding: 40px 160px 52px 160px;
+
+    & .modal-window__text {
+    margin-bottom: 87px;
+  }
+  }
+
   .form__text {
     width: 760px;
     padding: 82px 0 70px 0;
@@ -615,6 +709,4 @@ label[for="textfield"] {
       display: inline;
     }
   }
-
-
 }
