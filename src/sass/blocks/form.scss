@@ -118,7 +118,6 @@ label[for="textfield"] {
   }
 
   .form__set {
-    flex-order: column;
     justify-content: center;
   }
 
@@ -355,7 +354,7 @@ label[for="textfield"] {
   }
 
   .form__hidden-text {
-    display: block;
+    display: inline;
   }
 
   .form__fields {
@@ -468,7 +467,7 @@ label[for="textfield"] {
       background-image: url(../img/icon-phone.svg);
     }
 
-     &:last-child::after {
+    &:last-child::after {
       background-image: url(../img/icon-mail.svg);
     }
   }
@@ -503,4 +502,119 @@ label[for="textfield"] {
   .form__fn {
     margin-top: -5px;
   }
+}
+
+@media (min-width: $desktop) {
+  .form__text {
+    width: 760px;
+    padding: 82px 0 70px 0;
+  }
+
+  .form__set {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__fields:nth-child(1) {
+    width: 435px;
+
+    & .form__form-container-name {
+      width: 435px;
+      margin-top: 10px;
+    }
+  }
+
+  .form__fields:nth-child(2) {
+    width: 360px;
+
+    & .form__fieldset-header {
+      padding: 0 21px;
+    }
+  }
+
+  .form__fields:nth-child(3),
+  .form__fields:nth-child(4),
+  .form__fields:nth-child(5) {
+    width: 100%;
+  }
+
+  .form__fields:nth-child(2).form__form-fields {
+    padding-left: 73px;
+  }
+
+  .form__container.form__form-container-contacts {
+    width: 820px;
+    padding: 20px 0 10px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & .form__fieldcontainer {
+      width: 375px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .form__fields:nth-child(4).form__form-fields {
+
+    padding-bottom: 8px;
+
+    & .form__container {
+      width: 815px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 0;
+
+      & li:nth-child(1) {
+        order: 1;
+      }
+
+      & li:nth-child(2) {
+        order: 4;
+      }
+
+      & li:nth-child(3) {
+        order: 2;
+      }
+
+      & li:nth-child(4) {
+        order: 5;
+        margin-right: -30px;
+      }
+
+      & li:nth-child(5) {
+        order: 3;
+      }
+
+      & li:nth-child(6) {
+        order: 6;
+        margin-right: -5px;
+      }
+    }
+  }
+
+  .form__fieldset-header-text + .form__container {
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  textarea {
+    height: 125px;
+    margin-bottom: 45px;
+  }
+
+  .form__submit {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: -20px;
+  }
+
+  .form__fn {
+    & .form__hiddenfn {
+      display: inline;
+    }
+  }
+
+
 }

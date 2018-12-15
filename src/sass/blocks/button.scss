@@ -113,6 +113,10 @@
     @include font(21px, 21px);
   }
 
+  .button--green {
+    @include font(18px, 30px);
+  }
+
   .button--red,
   .button--gray {
     @include font(18px, 18px);
