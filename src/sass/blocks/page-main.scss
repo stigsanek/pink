@@ -87,6 +87,10 @@
     padding: 185px 20px 140px 20px;
     @include font(50px, 60px);
   }
+
+  .page-main__header--form {
+    padding: 185px 20px 80px 20px;;
+  }
 }
 
 @media (min-width: $desktop) {

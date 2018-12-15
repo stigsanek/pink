@@ -164,61 +164,79 @@
         <form class="form__set" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fields form__fields--hidden">
             <legend class="form__fieldset-header form__fieldset-header--hidden">Личные данные</legend>
-            <div class="form__container form__form-container-name">
-              <div class="form__fieldcontainer">
+            <ul class="form__container form__form-container-name">
+              <li class="form__fieldcontainer">
                 <label class="form__container-color-label" for="lastname">Фамилия: </label>
                 <input id="lastname" type="text" name="lastname" placeholder="Укажите фамилию*" required>
-              </div>
-              <div class="form__fieldcontainer">
+              </li>
+              <li class="form__fieldcontainer">
                 <label class="form__container-color-label" for="firstname">Имя: </label>
                 <input id="firstname" type="text" name="firstname" placeholder="Введите ваше имя*" required>
-              </div>
-              <div class="form__fieldcontainer">
+              </li>
+              <li class="form__fieldcontainer">
                 <label class="form__container-color-label" for="secondname">Отчество: </label>
                 <input id="secondname" type="text" name="secondname" placeholder="Ну и отчество тоже">
-              </div>
-            </div>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__fields form__form-fields">
             <legend class="form__fieldset-header form__header-field">С каким приложением путешествовали?</legend>
-            <div class="form__container">
-              <input id="app-ios" name="appfield" type="radio" value="ios" checked>
-              <label for="app-ios">Pink для iOS</label>
-              <input id="app-android" name="appfield" type="radio" value="android">
-              <label for="app-android">Pink на Android</label>
-              <input id="app-windows" name="appfield" type="radio" value="windows">
-              <label for="app-windows">Windows Phone</label>
-            </div>
+            <ul class="form__container">
+              <li class="form__form-container">
+                <input id="app-ios" name="appfield" type="radio" value="ios" checked>
+                <label for="app-ios">Pink для iOS</label>
+              </li>
+              <li class="form__form-container">
+                <input id="app-android" name="appfield" type="radio" value="android">
+                <label for="app-android">Pink на Android</label>
+              </li>
+              <li class="form__form-container">
+                <input id="app-windows" name="appfield" type="radio" value="windows">
+                <label for="app-windows">Windows Phone</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__fields">
             <legend class="form__fieldset-header">Контактная информация</legend>
-            <div class="form__container form__form-container-contacts">
-             <div class="form__fieldcontainer">
-              <input id="telfield" type="tel" name="telfield" placeholder="Номер, пожалуйста">
-              <label class="form__container-color-label" for="telfield">Номер телефона</label>
-              </div>
-              <div class="form__fieldcontainer">
-              <input id="emailfield" type="email" name="emailfield" placeholder="Введите почту*" required>
-              <label class="form__container-color-label" for="emailfield">Адрес почты</label>
-              </div>
-            </div>
+            <ul class="form__container form__form-container-contacts">
+              <li class="form__fieldcontainer">
+                <input id="telfield" type="tel" name="telfield" placeholder="Номер, пожалуйста">
+                <label class="form__container-color-label" for="telfield">Номер телефона</label>
+              </li>
+              <li class="form__fieldcontainer">
+                <input id="emailfield" type="email" name="emailfield" placeholder="Введите почту*" required>
+                <label class="form__container-color-label" for="emailfield">Адрес почты</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__fields form__form-fields">
             <legend class="form__fieldset-header">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form__container">
-              <input id="box1" type="checkbox" name="box1" checked>
-              <label for="box1">Сделал селфи с акулой</label>
-              <input id="box2" type="checkbox" name="box2" checked>
-              <label for="box2">Обгорел на пляже</label>
-              <input id="box3" type="checkbox" name="box3">
-              <label for="box3">Видел Чака Норриса</label>
-              <input id="box4" type="checkbox" name="box4">
-              <label for="box4">Накупил сувениров</label>
-              <input id="box5" type="checkbox" name="box5" checked>
-              <label for="box5">Удержал башню</label>
-              <input id="box6" type="checkbox" name="box6">
-              <label for="box6">Разгромил отель</label>
-            </div>
+            <ul class="form__container">
+              <li>
+                <input id="box1" type="checkbox" name="box1" checked>
+                <label for="box1">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input id="box2" type="checkbox" name="box2" checked>
+                <label for="box2">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input id="box3" type="checkbox" name="box3">
+                <label for="box3">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input id="box4" type="checkbox" name="box4">
+                <label for="box4">Накупил сувениров</label>
+              </li>
+              <li>
+                <input id="box5" type="checkbox" name="box5" checked>
+                <label for="box5">Удержал башню</label>
+              </li>
+              <li>
+                <input id="box6" type="checkbox" name="box6">
+                <label for="box6">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__fields">
             <legend class="form__fieldset-header form__fieldset-header-text">Опишите свои эмоции</legend>
