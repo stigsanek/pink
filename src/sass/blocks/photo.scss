@@ -20,6 +20,10 @@
   @include vh;
 }
 
+.photo-item--full-width .photo-item__img {
+    width: 100%;
+  }
+
 .photo-item__block {
   display: flex;
   flex-wrap: wrap;
@@ -98,10 +102,16 @@
 
   .photo-item--full-width {
     position: relative;
+    margin-bottom: 25px;
   }
 
   .photo-item__block {
     flex-direction: column;
+    width: 246px;
+  }
+
+  .photo-item.photo-item--full-width .photo-item__block {
+     width: auto;
   }
 
   .photo-item__text {
@@ -112,10 +122,6 @@
     @include font(14px, 30px);
     padding: 45px 0 48px 0;
     width: 250px;
-  }
-
-  .photo-item--full-width {
-    margin-bottom: 25px;
   }
 
   .photo__list {

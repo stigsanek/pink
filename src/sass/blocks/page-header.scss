@@ -35,6 +35,10 @@
   }
 }
 
+.page-header__link-index {
+  @include vh;
+}
+
 .page-header__toggle {
   display: none;
   background-color: transparent;

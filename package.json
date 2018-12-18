@@ -9,10 +9,9 @@
     "start": "npm run build && gulp serve"
   },
   "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
   ],
   "repository": {
     "type": "git",
@@ -30,6 +29,7 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",

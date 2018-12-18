@@ -140,6 +140,10 @@
   .publish__cover {
     padding: 57px 0 47px 0;
     margin-bottom: 0;
+
+    & picture {
+      width: 300px;
+    }
   }
 
   .publish__form {

@@ -93,6 +93,10 @@
   }
 }
 
+.page-footer__link-index {
+  @include vh;
+}
+
 
 @media (min-width: $mobile) {
   .page-footer--hidden{
