@@ -11,7 +11,6 @@ var del = require("del");
 var run = require("run-sequence");
 var uglify = require("gulp-uglify");
 
-
 gulp.task("style", function () {
   gulp.src("src/sass/style.scss")
     .pipe(sass())

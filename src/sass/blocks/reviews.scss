@@ -81,12 +81,12 @@
 
 .reviews__arrow-list {
   @include reset;
-  width: 940px;
+  position: absolute;
   top: 217px;
+  width: 940px;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  position: absolute;
 
   & span {
     @include vh;

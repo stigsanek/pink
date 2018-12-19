@@ -271,11 +271,11 @@ label[for="textfield"] {
   }
 
   input[type="checkbox"] + label::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
     content: "";
     display: block;
-    position: absolute;
-    left: 0;
-    top: -4px;
     width: 35px;
     height: 35px;
     background-color: #ffffff;
@@ -283,11 +283,11 @@ label[for="textfield"] {
   }
 
   input[type="checkbox"]:checked + label::after {
+    position: absolute;
+    top: 5px;
+    left: 10px;
     content: "";
     display: block;
-    position: absolute;
-    left: 10px;
-    top: 5px;
     width: 20px;
     height: 10px;
     border-left: 2px solid rgb(210, 40, 86);
@@ -334,11 +334,11 @@ label[for="textfield"] {
   }
 
   input[type="radio"] + label::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
     content: "";
     display: block;
-    position: absolute;
-    left: 0;
-    top: -4px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -347,11 +347,11 @@ label[for="textfield"] {
   }
 
   input[type="radio"]:checked + label::after {
+    position: absolute;
+    top: 7px;
+    left: 11px;
     content: "";
     display: block;
-    position: absolute;
-    left: 11px;
-    top: 7px;
     width: 17px;
     height: 17px;
     border-radius: 50%;

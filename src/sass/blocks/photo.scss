@@ -64,21 +64,23 @@
   padding-left: 33px;
 
   &::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
     content: "";
     width: 13px;
     height: 12px;
-    position: absolute;
     background-image: url("../img/icon-heart.svg");
-    left: 0;
-    top: 5px;
   }
 }
 
 .photo-item__block--img-day {
 
   &::before {
-    content: "Панорама дня";
     position: absolute;
+    top: 0;
+    right: 20px;
+    content: "Панорама дня";
     width: 140px;
     height: 31px;
     padding-top: 5px;
@@ -86,10 +88,8 @@
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
-    @include font(12px, 24px);
     font-family: $f-bold;
-    right: 20px;
-    top: 0
+    @include font(12px, 24px)
   }
 }
 
@@ -238,8 +238,8 @@
     position: relative;
 
     &::before {
-      right: 0;
       top: -453px;
+      right: 0;
     }
   }
 
