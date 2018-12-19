@@ -9,6 +9,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
 var run = require("run-sequence");
+var uglify = require("gulp-uglify");
 
 
 gulp.task("style", function () {
@@ -48,11 +49,18 @@ gulp.task("copy", function () {
   return gulp.src([
       "src/fonts/**/*.{woff,woff2}",
       "src/**/*.html",
-      "src/img/**",
-      "src/js/**"
+      "src/img/**"
     ], {
       base: "src"
 })
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("copy-js", function () {
+  return gulp.src("src/js/*.js", {base: "src"})
+    .pipe(gulp.dest("build"))
+    .pipe(uglify())
+    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build"));
 });
 
@@ -64,6 +72,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
+    "copy-js",
     "style",
     done
 ); });
