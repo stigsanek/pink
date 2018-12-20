@@ -10,6 +10,8 @@ var webp = require("gulp-webp");
 var del = require("del");
 var run = require("run-sequence");
 var uglify = require("gulp-uglify");
+var csscomb = require('gulp-csscomb');
+
 
 gulp.task("style", function () {
   gulp.src("src/sass/style.scss")
@@ -19,9 +21,15 @@ gulp.task("style", function () {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
-    .pipe(rename("style-min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("sort", function() {
+  return gulp.src("build/css/style.css")
+    .pipe(csscomb())
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("images", function () {
